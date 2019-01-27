@@ -1,0 +1,355 @@
+/* * is a wildcard referring to all elements. */
+
+* { margin: 0; box-sizing: border-box; }
+
+
+
+body {
+
+    font-size: 16px;
+
+    line-height: 32px;
+
+    font-family: Ubuntu, sans-serif;
+
+    color: black;
+
+}
+
+
+
+h1 {
+
+    font-size: 2rem;
+
+    color: ghostwhite;
+
+}
+
+
+
+h2 {
+
+    font-size: 1.5rem ;
+
+    text-align: center;
+
+    border-bottom: 1px solid #bbb;
+
+}
+
+
+
+header, main, footer {
+
+    margin: 1.25rem auto;
+
+    padding: .5rem;
+
+    max-width: 1000px;
+
+}
+
+
+
+header, footer, footer a {
+
+    text-align: center;
+
+    background-color: green;
+
+    color: whitesmoke;
+
+}
+
+
+
+header img {
+
+    width: 220px;
+
+    height: auto;
+
+    float: right;
+
+}
+
+
+
+footer {
+
+    font-size: 1.2rem;
+
+}
+
+
+
+.flip:hover {
+
+  transform: rotateY(180deg);
+
+}
+
+
+
+.front {
+
+    height: 250px;
+
+    width: 250px;
+
+    position: absolute;
+
+    top: 0;
+
+    left: 0;
+
+    backface-visibility: hidden;
+
+}
+
+
+
+.back {
+
+    height: 250px;
+
+    width: 250px;
+
+    position: absolute;
+
+    top: 0;
+
+    left: 0;
+
+    backface-visibility: hidden;
+
+    background: orange;
+
+    transform: rotateY(180deg);
+
+}
+
+
+
+.neon
+
+{
+
+  position: absolute;
+
+  margin: 0;
+
+  padding: 0 20px;
+
+  font-size: 2em;
+
+  color: #fff;
+
+  text-shadow: 0 0 20px #ff005b;
+
+
+
+}
+
+
+
+.neon:after
+
+{
+
+    content: attr(data-text);
+
+    position: absolute;
+
+    top: 0;
+
+    left: 0;
+
+    padding 0 20px;
+
+    z-index: -1;
+
+    color: #ff005b;
+
+    filter: blur(15px);
+
+}
+
+
+
+.neon:before
+
+{
+
+    content: '';
+
+    position: absolute;
+
+    top: 0;
+
+    left: 0;
+
+    width: 100%;
+
+    height: 100%;
+
+    background: #ff3a80;
+
+    z-index: -2;
+
+    opacity: .5;
+
+    filter: blur(40px);
+
+}
+
+
+
+
+
+.neon2
+
+{
+
+  position: absolute;
+
+  margin: 0;
+
+  padding: 0 20px;
+
+  font-size: 2em;
+
+  color: #fff;
+
+  text-shadow: 0 0 20px lightblue;
+
+
+
+}
+
+
+
+.neon2:after
+
+{
+
+    content: attr(data-text);
+
+    position: absolute;
+
+    top: 0;
+
+    left: 0;
+
+    padding 0 20px;
+
+    z-index: -1;
+
+    color: lightblue;
+
+    filter: blur(15px);
+
+}
+
+
+
+.neon2:before
+
+{
+
+    content: '';
+
+    position: absolute;
+
+    top: 0;
+
+    left: 0;
+
+    width: 100%;
+
+    height: 100%;
+
+    background: #ff3a80;
+
+    z-index: -2;
+
+    opacity: .5;
+
+    filter: blur(40px);
+
+}
+
+
+
+.neon3
+
+{
+
+  position: absolute;
+
+  margin: 0;
+
+  padding: 0 20px;
+
+  font-size: 2em;
+
+  color: #fff;
+
+  text-shadow: 0 0 20px orange;
+
+
+
+}
+
+
+
+.neon3:after
+
+{
+
+    content: attr(data-text);
+
+    position: absolute;
+
+    top: 0;
+
+    left: 0;
+
+    padding 0 20px;
+
+    z-index: -1;
+
+    color: orange;
+
+    filter: blur(15px);
+
+}
+
+
+
+.neon3:before
+
+{
+
+    content: '';
+
+    position: absolute;
+
+    top: 0;
+
+    left: 0;
+
+    width: 100%;
+
+    height: 100%;
+
+    background: #ff3a80;
+
+    z-index: -2;
+
+    opacity: .5;
+
+    filter: blur(40px);
+
+}
