@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+
+    <head>
+
+        <meta charset="utf-8">
+
+        <title> Canvas HTML Tag BOSHY</title>
+
+        <meta name="viewport" content="width=device-width, inital-scale=1">
+
+        
+
+        <style>
+
+            #canvas {
+
+                margin: 20px;
+
+                background-color: lightgray;
+
+                border: 1px solid gray;
+
+                
+
+            }
+
+            
+
+        </style>
+
+    </head>
+
+    
+
+     <body onload="draw();">
+
+        <h1> Canvas examples</h1>
+
+        <canvas id="canvas" width="275" height="375"></canvas>
+
+         
+
+         
+
+       
+
+    <script>
+
+        function draw() {
+
+            var canvas = document.getElementById('canvas');
+
+            if (canvas.getContext) {
+
+                var ctx = canvas.getContext('2d');
+
+
+
+                ctx.fillStyle = 'rgb(200, 0, 0)';
+
+                ctx.fillRect(160, 140, 60, 60);
+
+
+
+                //ctx.fillStyle = 'rgba(0, 0, 200, 0.5)';
+
+                //ctx.fillRect(30, 30, 50, 50);
+
+                
+
+                //ctx.fillRect(25,25, 100, 100);
+
+                //ctx.clearRect(45,45,60,60);
+
+                //ctx.strokeRect(50, 50, 50, 50);
+
+                
+
+                //ctx.beginPath();
+
+                //ctx.moveTo(75, 50);
+
+                //ctx.lineTo(100, 74);
+
+                //ctx.lineTo(100, 25);
+
+                //ctx.fill()
+
+                
+
+                ctx.fillStyle = 'rgb(0, 67, 114)';
+
+                ctx.fillRect(140, 240, 100, 100);
+
+                ctx.clearRect(160, 260, 60, 60);
+
+                ctx.strokeRect(165, 265, 50, 50);
+
+                
+
+                //Smilie Face
+
+                
+
+                ctx.lineWidth = 3;
+
+                ctx.beginPath();
+
+                ctx.arc(75, 220, 50, 0, Math.PI * 2, true); //outside circle
+
+                ctx.moveTo(110, 220);
+
+                ctx.arc(75, 220, 35, 0, Math.PI, false); //smile arc
+
+                ctx.moveTo(65,215);
+
+                
+
+                ctx.arc(60, 215, 5, 0, Math.PI * 2, true); //left eye
+
+                ctx.moveTo(95, 215);
+
+                ctx.arc(90, 215, 5,0, Math.PI * 2, true); // right eye
+
+                ctx.stroke();
+
+                
+
+                //Filled triangle
+
+                ctx.fillStyle = 'rgb(0, 114, 54)';
+
+                ctx.beginPath();
+
+                ctx.moveTo(25, 25);
+
+                ctx.lineTo(105, 25);
+
+                ctx.lineTo(25, 105);
+
+                ctx.fill();
+
+                //Stroked triangle
+
+                ctx.lineWidth = 2;
+
+                ctx.beginPath();
+
+                ctx.moveTo(125, 125);
+
+                ctx.lineTo(125, 45);
+
+                ctx.lineTo(45, 125);
+
+                ctx.closePath();
+
+                ctx.stroke();
+
+                
+
+                
+
+            }
+
+        }
+
+    </script>
+
+    
+
+    </body>
+
+        </html>
