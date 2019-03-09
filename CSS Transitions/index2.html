@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+        <title>CSS3 Transitions (Designing, Defining, and Triggering without Custom Libraries--Thought Library) - CIT 261 Mobile Application</title>
+
+        <meta charset="UTF-8">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link href="style.css" rel="stylesheet" type="text/css" media="all"/>
+
+        <style type="text/css">
+
+            .droplet {
+
+                background: chocolate;
+
+                border-radius: 2% 50%;
+
+                height: 100px;
+
+                margin: 100px;
+
+                transition: all 3s;
+
+                transition-timing-function: ease-in-out;
+
+                width: 100px;
+
+            }
+
+            .droplet:hover {
+
+                transform: rotate(1080deg);
+
+            }            
+
+            .square1 {
+
+                background: #00aa9d;
+
+                border-radius: 3px;
+
+                height: 150px;
+
+                margin: 10px;
+
+                position: absolute;
+
+                transition: transform 0.8s;
+
+                width: 150px;
+
+            }
+
+
+
+            .square2 {
+
+                background: #2b3f53;
+
+                border-radius: 3px;
+
+                height: 150px;
+
+                margin: 10px;
+
+                transition: transform 0.8s;
+
+                position: absolute;
+
+                width: 150px;
+
+            }
+
+            .square2:hover {
+
+                 transform: translate(40px, 40px);
+
+            }
+
+        </style>
+
+    </head>
+
+    <body>        
+
+        <div id="navcontainer">
+
+            <ul id="navlist">
+
+                <li id="active"><a href="index.html" id="current">Home</a></li>
+
+            </ul>
+
+        </div>
+
+        <h1>CSS3 Transitions (Designing, Defining, and Triggering without Custom Libraries--Thought Library)</h1>
+
+        <h3></h3>
+
+        <h4>Rotate Transition</h4>
+
+        <div class="droplet"></div>
+
+        <h4>Translate Transition</h4>
+
+        <div class="square1"></div>
+
+        <div class="square2"></div>
+
+        <br>
+
+        <br>
+
+        <br>
+
+        <br>
+
+        <h4></h4>
+
+    </body>
+
+</html>

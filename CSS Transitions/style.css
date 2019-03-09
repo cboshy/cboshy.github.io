@@ -1,0 +1,225 @@
+body{
+
+    background-color: #DDE;
+
+    padding:5px;
+
+    margin: auto;
+
+    font-family: sans-serif;
+
+}
+
+h1{
+
+    text-align: center;
+
+    font-family: sans-serif;
+
+    color: #002573; 
+
+}
+
+h3{
+
+    text-align: center;
+
+    font-weight:normal;
+
+    font-size: 18px;
+
+    font-style: italic;
+
+}
+
+h4{
+
+    font-size:25px;
+
+    color: #8A0B00;
+
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+a{
+
+    text-decoration: none;
+
+    color: #002573;
+
+}
+
+ul li{
+
+    list-style: none;
+
+    padding: 15px;
+
+    color: #8A0B00;
+
+}
+
+
+
+#navlist{ 
+
+    padding: 3px 0px;
+
+    border-bottom: 2px solid #778;
+
+    font: bold 16px Verdana, sans-serif; 
+
+}
+
+
+
+#navlist li{ 
+
+    list-style: none; 
+
+    display: inline; 
+
+    margin-left: 10px;
+
+}
+
+
+
+#navlist li a{ 
+
+    padding: 3px 1em;
+
+    border: 1px solid #778; 
+
+    border-bottom: none;
+
+    background: #DDE; 
+
+    color: #FFF;
+
+    text-decoration: none; 
+
+}
+
+
+
+#navlist li a:link{ 
+
+    color: #448; 
+
+}
+
+#navlist li a:hover{
+
+    color: #DDE; 
+
+    background: #AAE; 
+
+    border-color: #227; 
+
+}
+
+#navlist li a#current{ 
+
+    background: #002573; 
+
+}
+
+
+
+.imagen{
+
+    position: absolute;
+
+    margin-left: 60%;
+
+}
+
+h4.sandbox{
+
+    margin-right: 30px;
+
+}
+
+@media (max-width: 1200px) {
+
+    .imagen{
+
+        position: relative;
+
+        margin-left: 25%;
+
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    body{
+
+        font-size: 80%;
+
+    }
+
+    .imagen{
+
+        display: none;
+
+    }
+
+}
+
+
+
+/*-- Footer --*/
+
+section.footer {
+
+	background-color:#222;
+
+	padding: 6px 0 5px;
+
+	color:#fff;
+
+}
+
+section.footer h2{
+
+	font-size:30px;	
+
+	font-weight:500;
+
+        text-align: center;
+
+	padding-bottom: 10px;
+
+	text-transform:uppercase;
+
+}
+
+.copyright p {
+
+	text-align:center;
+
+	font-size:16px;
+
+	font-weight:200;
+
+}
+
+.footer-center p {
+
+    font-size: 15px;
+
+    line-height: 25px;
+
+    font-weight: 100;
+
+    padding-bottom: 10px;
+
+    color: #999;
+
+}
+
+/*-- /Footer --*/
